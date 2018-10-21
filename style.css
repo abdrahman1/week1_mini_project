@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./image/outer-background/full-bloom.png");
+    background-repeat: repeat;
+}
+
+.outer-body {
+    width: 60%;
+    margin: 0px auto;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: "Helvetica", sans-serif;
+    /* height: 1000px; */
+
+}
+
+
+/* start header or banner */
+.header .background-warkop {
+    width: 100%;
+    height: 75vh;
+    /* background-color: palevioletred; */
+    background-image: url("./image/background/hollander_low3.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header .background-warkop.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.background-warkop.grid-wrapper div {
+    font-size: 32px;
+    text-align: left;
+    color: #eab049;
+    opacity: 0.65;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.background-warkop.grid-wrapper div:hover {
+    opacity: 1;
+}
+
+.banner-text h1 {
+    margin: 0px;
+}
+
+.banner-text h3 {
+    margin-top: 0px;
+    margin-bottom: 8em;
+}
+
+/* end header banner */
+
+
+/* start navigation bar */
+.inner-body ul.navbar {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A2F3D;
+    /* display: -webkit-box; */
+    /* display: -moz-box; */
+    /* display: -ms-flexbox; */
+    /* display: -webkit-flex; */
+    /* background-color: #333; */
+    display: flex;
+    /* -webkit-flex-flow: row wrap; */
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    /* float: right; */
+
+
+}
+
+.inner-body ul.navbar {}
+
+.inner-body ul.navbar li.nav-item-left {
+    margin-right: auto;
+}
+
+.inner-body ul.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    color: #7B889A;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.inner-body ul.navbar li a:hover:not(.logo) {
+    background-color: rgb(37, 66, 85);
+    color: #eab049;
+}
+
+.inner-body ul.navbar li a.logo:hover {
+    color: #eab049;
+}
+
+/* ul.navbar li a img.navbar-logo {
+    width: 30px;
+} */
+/* end navigation bar */
+
+/*start konten section */
+.content-body {
+    margin: 10px auto;
+    padding: 10px 15px;
+    /* background-color: antiquewhite; */
+    /* border-radius: 2%; */
+    /* background-image: url("./image/outer-background/seamless_paper_texture.png"); */
+    background-repeat: repeat;
+}
+
+/*start konten body */
+.content-body {
+    /* width: 90%; */
+}
+
+.content-body.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/*start informasi dasar warkop*/
+.content-body .content-info.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    /* align-content: center; */
+    /* margin: 5px;
+    padding: 10px;
+    text-align: center; */
+
+}
+
+.content-info {
+    margin: 30px;
+    padding: 30px 20px;
+}
+
+.content-info.grid-wrapper div.info-item-1 {
+    /* background-color: #7B889A; */
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    width: 500px;
+}
+
+/* end informasi warkop */
+
+/* start konten makanan section */
+.content-body .content-makanan {
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.content-makanan {
+    margin: 30px 10px;
+    padding: 20px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.158);
+}
+
+.content-body .content-makanan.grid-wrapper {
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-columns: 100px auto;
+
+
+}
+
+/* start konten makanan - daftar makanan - sidebar */
+.content-makanan div.daftar-makanan {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A2F3D;
+}
+
+.content-makanan div.daftar-makanan a {
+    display: block;
+    padding: 14px 16px;
+    color: #7B889A;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.daftar-makanan a:hover {
+    background-color: rgb(37, 66, 85);
+    color: #eab049;
+}
+
+/* start content makanan - daftar makanan - keterangan makanan */
+.content-makanan div.keterangan-makanan {
+    height: 700px;
+    overflow: auto;
+
+}
+
+.grid-wrapper-ket-makanan {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* foto daftar makanan */
+.header-daftar-makanan {
+    background-color: #312019;
+    color: #7B889A;
+}
+
+.header-daftar-makanan:hover {
+    color: #eab049;
+}
+
+.header-daftar-makanan h3 {
+    margin: 0px;
+    padding: 8px 5px;
+}
+
+div.keterangan-makanan .foto-makanan img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    /* background-size: cover; */
+    /* overflow: hidden;  */
+}
+
+div.keterangan-makanan .info-makanan {}
+
+/* daftar menu makanan */
+.content-body .content-menu {
+    margin: 40px 10px;
+    padding: 20px 10px;
+    
+}
+
+.content-body .content-menu.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+div.daftar-menu {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.158);
+}
+/* navbar menu makanan */
+div.daftar-menu.flex-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #1A2F3D;
+    justify-content: center;
+}
+div.daftar-menu.flex-wrapper a {
+    display: block;
+    padding: 14px 16px;
+    color: #7B889A;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* daftar menu gambar */
+div.gambar-menu, {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.158);
+    /* overflow: scroll; */
+    /* height: 50%; */
+}
+div.gambar-menu.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+}
+.gambar-dropdown.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* daftar jenis menu makanan */
+.gambar-dropdown .header-menu {
+    background-color: #312019;
+    color: #7B889A;
+}
+.header-menu h3 {
+    margin: 0px;
+    padding: 8px 5px;
+}
+/* data / items menu makanan */
+.data-menu-makanan.flex-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+/* gamabr menu item */
+.gambar-data-menu {
+    /* border: 2px solid black; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 4px;
+}
+.gambar-data-menu img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    /* background-size: cover; */
+    /* overflow: hidden;  */
+}
+.gambar-menu .deskripsi {
+    font-size: 0.8em;
+}
+.gambar-menu .deskripsi p {
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+} 
+.gambar-menu .deskripsi h4 {
+    text-align: center;
+    margin: 0;
+    padding: 5px 2px;
+}
+/* gambar dropdown menu makanan */
+.gambar-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    padding: 8px 8px;
+    /* border: 2px solid black; */
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+/* dropdown hover data menu */
+.gambar-data-menu:hover .gambar-dropdown-content{
+    display: block
+}
+.gambar-dropdown-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.gambar-dropdown-content .deskripsi-dropdown p {
+    text-align: center;
+    margin: 0;
+}
+.gambar-dropdown-content .deskripsi-dropdown h4 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5px 2px;
+}
+
+/* footer */
+div.footer {
+}
+.footer {
+    margin: 0px;
+    padding: 0;
+    height: 400px;
+    margin: 0px auto;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    background-image: url("./image/outer-background/dark_embroidery.png");
+    background-repeat: repeat;
+}
+
+
+/* Medium screen */
+@media only screen and (max-width: 800px) {
+    .outer-body {
+        width: 85%;
+    }
+
+    .header .background-warkop {
+        height: 65vh;
+    }
+
+    .banner-text h3 {
+        margin-top: 0px;
+        margin-bottom: 1em;
+    }
+
+    .header .background-warkop.grid-wrapper {
+        justify-content: flex-start;
+        align-content: flex-end;
+    }
+
+    .background-warkop.grid-wrapper div {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .inner-body ul.navbar {
+        justify-content: space-around;
+    }
+
+    .inner-body ul.navbar li.nav-item-left {
+        margin-right: 0;
+    }
+
+    .content-info.grid-wrapper div.info-item-1 {
+        /* background-color: #7B889A; */
+        text-align: center;
+        padding: 8px;
+        font-size: 18px;
+        width: 500px;
+    }
+
+    /* daftar makanan */
+    .content-body .content-makanan.grid-wrapper {
+        display: block;
+    }
+
+    .content-makanan .daftar-makanan {
+        display: flex;
+        justify-content: space-around;
+    }
+
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .outer-body {
+        width: 90%;
+    }
+
+    .header .background-warkop {
+        height: 40vh;
+    }
+
+    .header .background-warkop.grid-wrapper {
+        justify-content: flex-start;
+        align-content: flex-end;
+    }
+
+    .background-warkop.grid-wrapper div {
+        display: none;
+    }
+
+    .inner-body ul.navbar {
+        position: static;
+        flex-direction: column;
+    }
+
+    .inner-body ul.navbar li.nav-item-left {
+        margin-right: 0;
+    }
+
+    .content-info.grid-wrapper div.info-item-1 {
+        /* background-color: #7B889A; */
+        text-align: center;
+        padding: 8px;
+        font-size: 16px;
+        width: 250px;
+    }
+
+    /* konten makanan / daftar makanan */
+    .content-makanan .daftar-makanan {
+        flex-direction: column;
+    }
+
+
+}
